@@ -1,0 +1,13 @@
+ I am trying to convert a python module (that contains the use of NLTK.Corpus) by jythonc. It is not able to include nltk dependencies
+within the java class it creates. So when i use this class in java, it fails to recognize nltk. Can anyone please let me know how should i use nltk in python/jython modules so i can use in Java.
+If there are any binary dependencies, you are out of luck. It won't work. You would need to write a RPC-Server then, with technologies such
+as XMLRPC or CORBA.
+Diez So does that mean that Jython does not support nltk uptil now. I ask
+this because when I try to import nltk in Jython (which is assumed to
+replace Python), i get the same error. Its just nltk that I am not
+able to use. The rest of the jython functions and libraries work fine
+within Java.
+I don't know for sure - how about you post the error-message? Otherwise we
+can't assess the problem.
+Diez- Hide quoted text -
+ - Show quoted text -
